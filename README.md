@@ -13,7 +13,7 @@
 * <a href="https://official.contest.yandex.ru/uz2020/contest/23207/standings">Uzbekistan and Tajikistan Regional 2020</a> 🏆🥇
 * <a href="https://kun.uz/ru/news/2019/02/24/v-uzbekistane-opredelili-pobediteley-finalnogo-tura-konkursa-robocoders-2019">Robocoders 2019</a> 🥇
 * <a href="https://it-park.uz/ru/itpark/news/pobediteli-chempionata-po-sportivnomu-programmirovaniyu-s-prizovym-fondom-v-30-000">IT Park Cup 2020</a> 🥈
-* <a href="https://contest.yandex.ru/contest/18299/standings/">Respublika miqyosida online musobaqa</a> 🥈
+* <a href="https://contest.yandex.ru/contest/18299/standings/">Online contest. Finals</a> 🥈
 * <a href="https://icpc.global/regionals/finder/Uzbekistan-Regional-2019/standings">2019 Uzbekistan Regional Contest</a> 🥈
 * <a href="https://official.contest.yandex.com/uzb-tjk-icpc-2021/contest/33443/standings/">2021 Uzbekistan and Tajikistan Regional Contest</a> 🥉
 
