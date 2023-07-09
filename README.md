@@ -16,6 +16,7 @@
 * <a href="https://contest.yandex.ru/contest/18299/standings/">Online contest. Finals</a> 🥈
 * <a href="https://icpc.global/regionals/finder/Uzbekistan-Regional-2019/standings">2019 Uzbekistan Regional Contest</a> 🥈
 * <a href="https://official.contest.yandex.com/uzb-tjk-icpc-2021/contest/33443/standings/">2021 Uzbekistan and Tajikistan Regional Contest</a> 🥉
+* <a href="https://robocontest.uz/olympiads/138/results">IT MARAFON 2022</a> 🥇
 
 # Шаблоны
 
