@@ -1,11 +1,11 @@
 template <typename T> struct treap {
-
-private:
+public:
     struct node {
 		T x;
-		int y, cnt = 1, rev;
+		int y, cnt = 1, rev, sum = 0;
 		node *l, *r;
 		node( T x ){
+                this -> sum = x;
 			this -> x = x;
 			this -> y =  rand() | ( 1 << ( rand() % 31 ) );;
 			this -> l = this -> r = nullptr;
@@ -19,12 +19,11 @@ private:
 		}
     } * root = nullptr;
 
-public:
-    pair<node *, node *> split ( node *Node, T x ){
+    pair<node *, node *> split ( node *Node, int x ){
 	    if ( Node == nullptr )
 		    return { nullptr, nullptr };
 	    
-		push ( Node );
+	    push ( Node );
 	    if ( Node -> x <= x ){
 		    pair < node *, node * > res = split ( Node -> r, x );
 		    Node -> r = res.first;
@@ -36,6 +35,24 @@ public:
 		    upd ( Node );
 		    return { res.first, Node };
 	    }
+    }
+
+    pair<node *, node *> split_kth ( node *Node, int k ){
+	    if ( Node == nullptr )
+		    return { nullptr, nullptr };
+	    
+		push ( Node );
+        int l = Node->l ? Node->l->cnt : 0;
+        if (l >= k) {
+            auto res = split_kth(Node->l, k);
+            Node->l = res.second;
+            upd(Node);
+            return make_pair(res.first, Node);
+        }
+        auto res = split_kth(Node->r, k - l - 1);
+        Node->r = res.first;
+        upd(Node);
+        return make_pair(Node, res.second);
     }
 
     node * merge( node * First, node * Second ){
@@ -58,6 +75,14 @@ public:
 	    }
     }
 
+    int sum( int l, int r ){
+		pair < node *, node * > res_1 = split( root, l );
+		pair < node *, node * > res_2 = split( res_1.second, r - l + 1 );
+		T res = res_2.first -> sum;
+		merge( merge( res_1.first, res_2.first ), res_2.second );
+		return res;
+	}
+
     node * find ( node * Node, T x ){
 	    if ( Node == nullptr )
 		    return nullptr;
@@ -69,23 +94,23 @@ public:
     }
 
     node * insert( node * Node, T x ){
-	    if ( count( x ) ) return root;
+	    // if ( count( x ) ) return root;
 	    pair < node *, node * > res = split ( root, x );
 	    node * new_node = new node ( x );
 	    return merge ( merge ( res.first, new_node ), res.second ) ;
     }
 
     void reverse ( node * Node, int l, int r ){
-            pair < node *, node * > res_1 = split ( Node, l - 1 );
-            pair < node *, node * > res_2 = split ( res_1.second, r );
-    	    res_2.first -> rev ^= 1;
-    	    merge ( merge ( res_1.first, res_2.first ), res_2.second );
+        pair < node *, node * > res_1 = split ( Node, l - 1 );
+        pair < node *, node * > res_2 = split ( res_1.second, r );
+        res_2.first -> rev ^= 1;
+        merge ( merge ( res_1.first, res_2.first ), res_2.second );
     }
 
-	node * erase ( node * Node, T x ){
+    node * erase ( node * Node, T x ){
 	    if ( !count ( x ) ) return root;
-	    pair < node *, node * > res_1 = split ( root, x - 1 );
-	    pair < node *, node * > res_2 = split ( res_1.second, x );
+	    pair < node *, node * > res_1 = split ( root, x-1 );
+	    pair < node *, node * > res_2 = split_kth ( res_1.second, 1 );
 	    return merge ( res_1.first, res_2.second );
     }
 
@@ -112,32 +137,42 @@ public:
 		    return order ( Node -> l, x, k );
     }
     
-	inline void upd ( node * Node ){
-	    if ( Node == nullptr )
-		    Node -> cnt = 0;
-	    else
-		    Node -> cnt = cnt ( Node -> l ) + cnt ( Node -> r ) + 1;
-    }
-    
-	void push ( node * Node ){
+    inline void upd( node * Node ) {
+	if ( Node == nullptr )
+		Node -> cnt = 0;
+	else {
+		Node -> sum = Node -> x;
+		Node -> cnt = 1;
+		if ( Node -> l != nullptr ){
+			Node -> sum += Node -> l -> sum;
+			Node -> cnt += cnt( Node -> l );
+		}
+		if ( Node -> r != nullptr ){
+			Node -> sum += Node -> r -> sum;
+			Node -> cnt += cnt( Node -> r );
+		}
+	}
+    }    
+
+    void push ( node * Node ){
     	if ( Node == nullptr || !Node -> rev ) 
-			return;
+		return;
     	
-		swap ( Node -> l, Node -> r );
+	swap ( Node -> l, Node -> r );
     	if ( Node -> l != nullptr )
     	    Node -> l -> rev ^= 1;
 	    
-		if ( Node -> r != nullptr )
-		    Node -> r -> rev ^= 1;
-	    
-		Node -> rev = 0;
+	if ( Node -> r != nullptr )
+	    Node -> r -> rev ^= 1;
+    
+	Node -> rev = 0;
     }
 
-	int cnt ( node * Node ) { return Node != nullptr ? Node -> cnt : 0 };
-	node * split( int x ){ return split( root, x ); }
-	void merge( node *other ) { root = merge( root, other ); }
-	void reverse ( int l, int r ){ reverse ( root, l, r ); }
-	int order ( int x ) { return order ( root, x - 1 ); }
+    int cnt ( node * Node ) { return Node != nullptr ? Node -> cnt : 0; };
+    auto split( int x ){ return split( root, x ); }
+    void merge( node *other ) { root = merge( root, other ); }
+    void reverse ( int l, int r ){ reverse ( root, l, r ); }
+    int order ( int x ) { return order ( root, x - 1 ); }
     int kth_elem ( int k ) { return kth_elem ( root, k - 1 ); }
     int max () { return kth_elem ( root -> cnt - 1 ); }
     int min () { return kth_elem ( 0 ); }
@@ -146,4 +181,3 @@ public:
     node * erase ( T x ) { return root = erase ( root, x ); }
     int count ( T x ) { return find ( root, x ) != nullptr; }
 };
- 
