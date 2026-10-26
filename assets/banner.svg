@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 330" width="1200" height="330" role="img" aria-labelledby="title desc">
+  <title id="title">Think precisely. Build deliberately. Codeforces Master · peak 2157</title>
+  <desc id="desc">A restrained charcoal engineering banner with warm orange accents and an original tree diagram.</desc>
+  <rect width="1200" height="330" rx="12" fill="#090a0b"/>
+  <g stroke="#222629" stroke-width=".7" opacity=".45"><path d="M810 0v330"/><path d="M850 0v330"/><path d="M890 0v330"/><path d="M930 0v330"/><path d="M970 0v330"/><path d="M1010 0v330"/><path d="M1050 0v330"/><path d="M1090 0v330"/><path d="M1130 0v330"/><path d="M1170 0v330"/><path d="M810 10h390"/><path d="M810 50h390"/><path d="M810 90h390"/><path d="M810 130h390"/><path d="M810 170h390"/><path d="M810 210h390"/><path d="M810 250h390"/><path d="M810 290h390"/><path d="M810 330h390"/></g>
+  <path d="M810 28v274" stroke="#292d30"/>
+  <rect x="54" y="40" width="7" height="7" fill="#ff6b3d"/>
+  <text x="74" y="48" fill="#b2b3b1" font-family="monospace" font-size="12" letter-spacing="2">ALGORITHMS / C++</text>
+  <g fill="#f2f0ed" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">
+    <text x="52" y="138">Think precisely.</text>
+    <text x="52" y="204">Build deliberately.</text>
+  </g>
+  <text x="56" y="257" fill="#a2a6a8" font-family="Arial, Helvetica, sans-serif" font-size="17">Codeforces Master · peak 2157</text>
+  <path d="M56 289h62" stroke="#ff6b3d" stroke-width="2"/>
+  <text x="135" y="294" fill="#747b7f" font-family="monospace" font-size="10" letter-spacing="2">NAZARBEK BALTABAEV / 05</text>
+  <g fill="none" stroke="#393d41" stroke-width="1.5"><path d="M980 74 902 151 856 246M902 151 943 246M980 74 1065 151 1026 246M1065 151 1110 246"/><path d="M980 74 902 151 943 246" stroke="#ff6b3d"/></g><g fill="#101214" stroke="#555b60"><circle cx="980" cy="74" r="19"/><circle cx="902" cy="151" r="19"/><circle cx="1065" cy="151" r="19"/><circle cx="856" cy="246" r="14"/><circle cx="943" cy="246" r="14"/><circle cx="1026" cy="246" r="14"/><circle cx="1110" cy="246" r="14"/></g><circle cx="943" cy="246" r="7" fill="#ff6b3d"/><g fill="#e4e1da" font-family="monospace" font-size="12" text-anchor="middle"><text x="980" y="78">O</text><text x="902" y="155">log</text><text x="1065" y="155">n</text></g>
+</svg>
