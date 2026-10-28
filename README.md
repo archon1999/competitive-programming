@@ -2,11 +2,11 @@
 
 # Competitive programming
 
-**Algorithms, data structures and a record of competition.**
+**C++ templates, competition results and olympiad organization.**
 
 [Codeforces: Odminbey](https://codeforces.com/profile/Odminbey) · [KEP.uz](https://kep.uz/) · [Template library](#template-library) · [Profile](https://github.com/archon1999)
 
-I'm Nazarbek Baltabaev, a Codeforces **Master** with a peak rating of **2157**. This repository holds my C++ templates and a source-linked selection of competition results. The same foundations inform my work on KEP.uz and production software.
+C++ reference implementations maintained by [Nazarbek Baltabaev](https://github.com/archon1999), a Codeforces **Master** with a peak rating of **2157**. Competition results and event organization are listed with sources.
 
 ## Selected results
 
@@ -23,7 +23,7 @@ I'm Nazarbek Baltabaev, a Codeforces **Master** with a peak rating of **2157**. 
 
 An unusual highlight: the [Codeforces Round 570 announcement](https://codeforces.com/blog/entry/67938) lists my historical handle `Nazarbek_Baltabaev` first among the round's best hackers, with **120 successful hacks**. That is a hacking result, separate from the overall contest ranking.
 
-Results and Codeforces peak rating checked on **26 October 2026**. The 2024 source confirms finalist status; it is not a final placement table.
+ICPC results are regional team placements. Individual competition results identify their category.
 
 ## Olympiad organization
 
@@ -53,3 +53,4 @@ Standalone C++ reference implementations, grouped for navigation. Review the ass
 I founded [KEP.uz](https://kep.uz/), a programming practice and learning platform, and contribute to [cp.uz](https://cp.uz/), an Uzbek-language competitive-programming knowledge platform.
 
 [Telegram](https://t.me/archon1999) · [GitHub](https://github.com/archon1999)
+
