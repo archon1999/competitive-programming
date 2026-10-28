@@ -10,19 +10,29 @@ I'm Nazarbek Baltabaev, a Codeforces **Master** with a peak rating of **2157**. 
 
 ## Selected results
 
-| Year | Competition | Result |
+| Year / season | Competition | Result |
 | --- | --- | --- |
 | 2025 | [Yandex Cup — Frontend main category](https://new.contest.yandex.com/contests/86107/leaderboard) | **1st place**, 158 points |
 | 2024 | [Yandex Cup — Frontend](https://t.me/yandex_cup/125) | **Finalist** |
-| 2020 | [ICPC Uzbekistan & Tajikistan Regional](https://official.contest.yandex.ru/uz2020/contest/23207/standings/) | **1st place, team** — TUIT MathX |
+| 2019–2020 | [ICPC Uzbekistan & Tajikistan Regional](https://official.contest.yandex.ru/uz2020/contest/23207/standings/) | **1st place, team** — TUIT MathX |
+| 2020 | [Education Quality Inspectorate — national online competition](https://t.me/uztdi/1065) | **2nd place, student category**, 7 solved |
 | 2020 | [IT Park Cup, Division A](https://www.it-park.uz/ru/itpark/news/godovshchina-one-million-uzbek-coders-i-pobediteli-konkursov-kak-eto-bylo) | **2nd place** |
-| 2019 | [ICPC Uzbekistan](https://neerc.ifmo.ru/archive/2019/uzbekistan/standings.html) | **2nd place, team** — Urgench TUIT #1 |
+| 2018–2019 | [ICPC Uzbekistan](https://neerc.ifmo.ru/archive/2019/uzbekistan/standings.html) | **2nd place, team** — Urgench TUIT #1 |
 | 2019 | [RoboCoders, youth category](https://www.uzdaily.uz/ru/opredeleny-finalisty-konkursa-robo-coders-2019/) | **1st place** |
-| 2018 | [ICPC Uzbekistan Subregional](https://neerc.ifmo.ru/archive/2018/uzbekistan/standings.html) | **1st place, team** — TUIT Urgench Branch #1 |
+| 2017–2018 | [ICPC Uzbekistan Subregional](https://neerc.ifmo.ru/archive/2018/uzbekistan/standings.html) | **1st place, team** — TUIT Urgench Branch #1 |
 
 An unusual highlight: the [Codeforces Round 570 announcement](https://codeforces.com/blog/entry/67938) lists my historical handle `Nazarbek_Baltabaev` first among the round's best hackers, with **120 successful hacks**. That is a hacking result, separate from the overall contest ranking.
 
 Results and Codeforces peak rating checked on **26 October 2026**. The 2024 source confirms finalist status; it is not a final placement table.
+
+## Olympiad organization
+
+| Event | Contribution |
+| --- | --- |
+| [KEP Junior Algorithmics 2024](https://t.me/KEPuzChannel/1156) | Organization and final problem-set co-authorship; 200+ participants, two qualifiers and a Khorezm final. |
+| [REVO CUP 2025](https://revolution.uz/uz/blog/revo-cup-2025-programming-and-cybersecurity-contest) | Co-organized with REVO Global across programming and CTF, with qualifiers on KEP.uz and an offline final in Urgench. |
+
+[Event dates, credits and primary sources](https://github.com/archon1999/engineering-portfolio/blob/main/community/olympiads.md).
 
 ## Template library
 
