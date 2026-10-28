@@ -1,4 +1,4 @@
-![Competitive programming — think precisely, build deliberately](assets/banner.svg)
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg"><img src="assets/banner-light.svg" alt="Competitive programming — Odminbey" width="100%"></picture>
 
 # Competitive programming
 
