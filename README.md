@@ -1,42 +1,45 @@
-# О себе
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/banner.svg"><img src="assets/banner-light.svg" alt="Competitive programming — Odminbey" width="100%"></picture>
 
-Занимаюсь спортивным программированием с <b>18 лет</b> <br>
+# Competitive programming
 
-<a target="_blank" href="https://codeforces.com/profile/NaZaR.IO">
-  <img alt="Codeforces" src="https://cp-logo.vercel.app/codeforces/NaZaR.IO" />
-</a>
-<hr>
+**Algorithms, data structures and a record of competition.**
 
-# 🎖 Достижения и награды
+[Codeforces: Odminbey](https://codeforces.com/profile/Odminbey) · [KEP.uz](https://kep.uz/) · [Template library](#template-library) · [Profile](https://github.com/archon1999)
 
-* <a href="https://official.contest.yandex.com/uzbekistan2018/contest/10164/standings/">Northern Eurasia Uzbekistan subregional, ICPC 2018-2019</a> 🏆🥇
-* <a href="https://official.contest.yandex.ru/uz2020/contest/23207/standings">Uzbekistan and Tajikistan Regional 2020</a> 🏆🥇
-* <a href="https://kun.uz/ru/news/2019/02/24/v-uzbekistane-opredelili-pobediteley-finalnogo-tura-konkursa-robocoders-2019">Robocoders 2019</a> 🥇
-* <a href="https://it-park.uz/ru/itpark/news/pobediteli-chempionata-po-sportivnomu-programmirovaniyu-s-prizovym-fondom-v-30-000">IT Park Cup 2020</a> 🥈
-* <a href="https://contest.yandex.ru/contest/18299/standings/">Online contest. Finals</a> 🥈
-* <a href="https://icpc.global/regionals/finder/Uzbekistan-Regional-2019/standings">2019 Uzbekistan Regional Contest</a> 🥈
-* <a href="https://official.contest.yandex.com/uzb-tjk-icpc-2021/contest/33443/standings/">2021 Uzbekistan and Tajikistan Regional Contest</a> 🥉
-* <a href="https://robocontest.uz/olympiads/138/results">IT MARAFON 2022</a> 🥇
+I'm Nazarbek Baltabaev, a Codeforces **Master** with a peak rating of **2157**. This repository holds my C++ templates and a source-linked selection of competition results. The same foundations inform my work on KEP.uz and production software.
 
-# Шаблоны
+## Selected results
 
-* <b>bitwise.cpp</b> - функции для работы с битовыми операциями.
-* <b>bst.cpp</b> - Структура данных. Бинарное дерево поиска.
-* <b>dsu.cpp</b> - Структура данных Система непересекающихся множеств.
-* <b>fenwick.cpp</b> - Структура данных. Дерево фенвика.
-* <b>lca.cpp</b> - Наименьший общий предок. Метод двоичного подъема.
-* <b>list.cpp</b> - Структура данных. Список.
-* <b>mo.cpp</b> - Алгоритм Мо.
-* <b>modular.cpp</b> - Шаблон для работы с числами по модулю.
-* <b>nt.cpp</b> - Факторизация за <b>O(n^(1/4))</b>.
-* <b>number.cpp</b> - Теория чисел.
-* <b>segment_tree.cpp</b> - Структура данных. Дерево отрезков.
-* <b>solution.cpp</b> - Базовый шаблон.
-* <b>sparce_table.cpp</b> - Структура данных. Разреженные таблицы.
-* <b>str_comparator.cpp</b> - Структура для хещирования строк.
-* <b>suffix_array.cpp</b> - Структура данных. Суффиксный массив.
-* <b>treap_1.cpp</b> - Структура данных. Декартово дерево.
-* <b>treap_2.cpp</b> - Структура данных. Декартово дерево по неявному ключу.
-* <b>trie.cpp</b> - Структура данных. Ахо-Корасик.
-* <b>trie-bor.cpp</b> - Структура данных. Бор.
-* <b>triple.cpp</b> - Структура данных для хранения 3 значений.
+| Year | Competition | Result |
+| --- | --- | --- |
+| 2025 | [Yandex Cup — Frontend main category](https://new.contest.yandex.com/contests/86107/leaderboard) | **1st place**, 158 points |
+| 2024 | [Yandex Cup — Frontend](https://t.me/yandex_cup/125) | **Finalist** |
+| 2020 | [ICPC Uzbekistan & Tajikistan Regional](https://official.contest.yandex.ru/uz2020/contest/23207/standings/) | **1st place, team** — TUIT MathX |
+| 2020 | [IT Park Cup, Division A](https://www.it-park.uz/ru/itpark/news/godovshchina-one-million-uzbek-coders-i-pobediteli-konkursov-kak-eto-bylo) | **2nd place** |
+| 2019 | [ICPC Uzbekistan](https://neerc.ifmo.ru/archive/2019/uzbekistan/standings.html) | **2nd place, team** — Urgench TUIT #1 |
+| 2019 | [RoboCoders, youth category](https://www.uzdaily.uz/ru/opredeleny-finalisty-konkursa-robo-coders-2019/) | **1st place** |
+| 2018 | [ICPC Uzbekistan Subregional](https://neerc.ifmo.ru/archive/2018/uzbekistan/standings.html) | **1st place, team** — TUIT Urgench Branch #1 |
+
+An unusual highlight: the [Codeforces Round 570 announcement](https://codeforces.com/blog/entry/67938) lists my historical handle `Nazarbek_Baltabaev` first among the round's best hackers, with **120 successful hacks**. That is a hacking result, separate from the overall contest ranking.
+
+Results and Codeforces peak rating checked on **26 October 2026**. The 2024 source confirms finalist status; it is not a final placement table.
+
+## Template library
+
+Standalone C++ reference implementations, grouped for navigation. Review the assumptions and adapt the code to each problem; this repository does not expose a single packaged library or universal build target.
+
+| Area | Files |
+| --- | --- |
+| Foundations | [Base solution](templates/solution.cpp) · [Bit operations](templates/bitwise.cpp) · [Three-value structure](templates/triple.cpp) |
+| Disjoint sets | [DSU](templates/dsu.cpp) |
+| Range queries | [Fenwick tree](templates/fenwick.cpp) · [Segment tree](templates/segment_tree.cpp) · [Sparse table](templates/sparce_table.cpp) · [Mo's algorithm](templates/mo.cpp) |
+| Trees | [Binary search tree](templates/bst.cpp) · [Lowest common ancestor](templates/lca.cpp) · [Treap](templates/treap_1.cpp) · [Implicit treap](templates/treap_2.cpp) |
+| Strings | [String hashing](templates/str_comparator.cpp) · [Suffix array](templates/suffix_array.cpp) · [Aho–Corasick](templates/trie.cpp) · [Trie](templates/trie_bor.cpp) |
+| Number theory | [Modular arithmetic](templates/modular.cpp) · [Number theory helpers](templates/number.cpp) · [Factorization](templates/nt.cpp) |
+| Sequences | [List](templates/list.cpp) |
+
+## Beyond contests
+
+I founded [KEP.uz](https://kep.uz/), a programming practice and learning platform, and contribute to [cp.uz](https://cp.uz/), an Uzbek-language competitive-programming knowledge platform.
+
+[Telegram](https://t.me/archon1999) · [GitHub](https://github.com/archon1999)
